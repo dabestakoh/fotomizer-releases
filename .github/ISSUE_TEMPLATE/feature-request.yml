@@ -1,0 +1,40 @@
+name: Feature request
+description: Explain a photo-editing problem or an improvement you would find useful.
+title: '[Feature] '
+labels: ['enhancement', 'needs-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Requests and attachments are public. Do not include credentials, personal photos, or private diagnostic logs.
+        A request is considered for review; it does not promise implementation or a release date.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What are you trying to achieve, and what gets in your way today?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed behavior
+      description: Describe what you would expect to do in the app.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Intended benefit
+      description: Explain who this helps and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or current workaround
+  - type: textarea
+    id: examples
+    attributes:
+      label: Optional examples
+      description: Use generic or redacted material. Do not include personal photos or private logs.

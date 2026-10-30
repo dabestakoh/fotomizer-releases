@@ -64,7 +64,15 @@ Get-FileHash -LiteralPath 'C:\path\to\Fotomizer-version.apk' -Algorithm SHA256
 
 Compare the result with the SHA-256 in that release's notes.
 
-## Troubleshooting
+## Report a bug or suggest a feature
+
+Open [New issue](https://github.com/dabestakoh/fotomizer-releases/issues/new/choose) and choose **Bug report** or **Feature request**. A GitHub account is required to submit a public issue. The forms collect the details needed for review and apply an initial reporting label.
+
+**Public issues and attachments are visible to everyone.** Use generic/redacted screenshots and keep personal photos, credentials, private paths and full diagnostic logs out of the report. A submitted request does not automatically authorize implementation or promise a release date.
+
+Maintainers use the [triage template](docs/MAINTAINER-TRIAGE.md) to record reproduction, approval scope and verification plans. Private diagnostic details stay in the private tracker.
+
+## Private troubleshooting
 
 Use **Share diagnostic report → Upload** in Fotomizer to send a sanitized diagnostic report to the private troubleshooting repository. This does not require a GitHub account. Local JSON sharing remains available if uploading fails.
 

@@ -1,0 +1,75 @@
+name: Bug report
+description: Report something that is not working as expected in Fotomizer.
+title: '[Bug] '
+labels: ['bug', 'needs-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report and its attachments will be public. Do not include credentials, personal photos, private paths, or full diagnostic logs.
+        For private diagnostics, use Share diagnostic report → Upload in the app. You can mention that you submitted a report without posting its contents here.
+  - type: input
+    id: version
+    attributes:
+      label: Fotomizer version
+      placeholder: 1.4.9; version code if known
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Android version and device model
+      description: Do not include a serial number or device identifier.
+      placeholder: Android version, manufacturer, model
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected feature
+      options:
+        - Photo editor
+        - Masking
+        - Collage
+        - Grid or Carousel
+        - Gallery
+        - Updates or installation
+        - Diagnostic uploads
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Change...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the visible error, if any, and how often the problem happens.
+    validations:
+      required: true
+  - type: dropdown
+    id: diagnostic
+    attributes:
+      label: Private diagnostic submission
+      options:
+        - Not submitted
+        - Submitted using the app
+        - Upload failed
+        - Unsure
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional screenshot or recording
+      description: Use generic photos or redact personal content before attaching. Do not paste full diagnostic logs.
